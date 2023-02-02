@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import UndrawBooks from "../assets/Undraw_Books.svg"
 
 const Landing = ()=>{
@@ -9,9 +10,9 @@ const Landing = ()=>{
                     <div className="header__description">
                         <h1> Best library </h1>
                         <h2>Find you dream book wioth <span className="purple"> libray </span> </h2>
-                        <a href="#features">
+                        <Link to="#features">
                             <button className="btn">Browse books</button>
-                        </a>
+                        </Link>
                     </div>
                     <figure className="header__img--warapper">
                         <img src={UndrawBooks} alt="" />
